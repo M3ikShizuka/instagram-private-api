@@ -1,0 +1,17 @@
+<!-- 
+    THIS EXAMPLE WORKS!
+    PASSWORD CRYPTO: AES-GCM-256, crypto_box seal.
+    crypto_box is curve25519xsalsa20poly1305, a particular combination of Curve25519, Salsa20, and Poly1305 specified in "Cryptography in NaCl".
+-->
+<!doctype html>
+<html>
+    <head>
+        <script src="https://tweetnacl.js.org/nacl.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tweetnacl-sealedbox-js@1.2.0/sealedbox.web.js"></script>
+        <script type="module" src="signinEncryptData.js"></script>
+    </head>
+
+    <body>
+        <p>Sign in post data: <span id="postData"></span></p>
+    </body>
+</html>
