@@ -1,0 +1,99 @@
+{
+  "crypto_evidence": {
+    "dab223a2f741bbe6f747db20be141d5f47475ebf": {
+      "file_paths": [
+        "cryptoshit.js"
+      ],
+      "hits": [
+        {
+          "comments": "",
+          "detection_method": "keyword",
+          "encryption_api_usage": "",
+          "encryption_library": "",
+          "evidence_type": "protocol/PKI",
+          "file_index_begin": 130,
+          "file_index_end": 139,
+          "human_reviewed": "",
+          "line_index_begin": 8,
+          "line_index_end": 17,
+          "line_number": 6,
+          "line_text": "        publicKey: t,",
+          "line_text_after_1": "        secretKey: n",
+          "line_text_after_2": "    }",
+          "line_text_after_3": "}",
+          "line_text_before_1": "    {",
+          "line_text_before_2": "    return C(t, n),",
+          "line_text_before_3": "        , n = new Uint8Array(Mr);",
+          "matched_text": "publicKey"
+        },
+        {
+          "comments": "",
+          "detection_method": "keyword",
+          "encryption_api_usage": "",
+          "encryption_library": "",
+          "evidence_type": "generic",
+          "file_index_begin": 152,
+          "file_index_end": 161,
+          "human_reviewed": "",
+          "line_index_begin": 8,
+          "line_index_end": 17,
+          "line_number": 7,
+          "line_text": "        secretKey: n",
+          "line_text_after_1": "    }",
+          "line_text_after_2": "}",
+          "line_text_after_3": "",
+          "line_text_before_1": "        publicKey: t,",
+          "line_text_before_2": "    {",
+          "line_text_before_3": "    return C(t, n),",
+          "matched_text": "secretKey"
+        },
+        {
+          "comments": "",
+          "detection_method": "keyword",
+          "encryption_api_usage": "",
+          "encryption_library": "",
+          "evidence_type": "generic",
+          "file_index_begin": 289,
+          "file_index_end": 294,
+          "human_reviewed": "",
+          "line_index_begin": 46,
+          "line_index_end": 51,
+          "line_number": 17,
+          "line_text": "    var n = 'undefined' != typeof self ? self.crypto || self.msCrypto : null;",
+          "line_text_after_1": "    if (n && n.getRandomValues) {",
+          "line_text_after_2": "        t.setPRNG(function(t, o) {",
+          "line_text_after_3": "            var h, f = new Uint8Array(o);",
+          "line_text_before_1": "function() {",
+          "line_text_before_2": "",
+          "line_text_before_3": "}",
+          "matched_text": "crypt"
+        },
+        {
+          "comments": "",
+          "detection_method": "keyword",
+          "encryption_api_usage": "",
+          "encryption_library": "",
+          "evidence_type": "generic",
+          "file_index_begin": 306,
+          "file_index_end": 311,
+          "human_reviewed": "",
+          "line_index_begin": 63,
+          "line_index_end": 68,
+          "line_number": 17,
+          "line_text": "    var n = 'undefined' != typeof self ? self.crypto || self.msCrypto : null;",
+          "line_text_after_1": "    if (n && n.getRandomValues) {",
+          "line_text_after_2": "        t.setPRNG(function(t, o) {",
+          "line_text_after_3": "            var h, f = new Uint8Array(o);",
+          "line_text_before_1": "function() {",
+          "line_text_before_2": "",
+          "line_text_before_3": "}",
+          "matched_text": "Crypt"
+        }
+      ],
+      "is_source_code": true
+    }
+  },
+  "crypto_spec_version": 3.0,
+  "file_collection_verification_code": "87f63aa365bbf9c4ac5dcbb5efee2386cace6ab8",
+  "package_name": "cryptoshit.js"
+}
